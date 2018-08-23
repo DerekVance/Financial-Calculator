@@ -1,0 +1,29 @@
+<h3>Cash Flow</h3>
+<div class="columns">
+  <div class="column">
+    <div class="field">
+      <label class="label">Income</label>
+      <div class="control">
+        <input (keyup)="calulateCashFlow()" [(ngModel)]="CashFlow.income" class="input" type="text" placeholder="">
+      </div>
+    </div>
+    <div class="field">
+        <label class="label">Expenses</label>
+        <div class="control">
+          <input (keyup)="calulateCashFlow()" [(ngModel)]="CashFlow.expenses" class="input" type="text" placeholder="">
+        </div>
+      </div>
+  </div>
+  <div class="column">
+    <h1>Cold Hard Cash</h1>
+    <h3>{{ CashFlow.cashFlow }}</h3>
+  </div>
+  <div class="column">
+    <p>
+      Cash flow is a movement of money in and out of a businesses, projects, or
+      investments. It can be used to also calculate the internal rate of return or
+      the net present value. Cash flow gives insight to a businesses liquidity,
+      being profitable does not equally compare to a companies liquid assets.
+    </p>
+  </div>
+</div>

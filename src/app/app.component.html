@@ -1,0 +1,33 @@
+<nav class="navbar container" role="navigation" aria-label="dropdown navigation">
+  <a class="navbar-item">
+      {{ title }}
+  </a>
+  <div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">
+     Financial Formulas
+    </a>
+    <div class="navbar-dropdown">
+      <a class="navbar-item" routerLink="/future-value-of-money">
+        Future Value of Money
+      </a>
+      <a class="navbar-item" routerLink="/present-value-of-money">
+        Present Value of Money
+      </a>
+      <a class="navbar-item" routerLink="/time-to-double-investment">
+        Time to Double Investment
+      </a>
+      <a class="navbar-item" routerLink="/cash-flow">
+        Cash Flow
+      </a>
+      <a class="navbar-item" routerLink="/percent-gain-or-loss">
+        Percent Gain or Loss
+      </a>
+      <a class="navbar-item" routerLink="/inflation-adjusted-return">
+        Inflation Adjusted Return
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
