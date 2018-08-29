@@ -24,9 +24,9 @@ export class FutureValueComponent implements OnInit {
     console.log('rate', rate, 'number of periods', numberOfPeriods, 'rate of return', rateOfReturn);
     
     this.FutureValue.futureValue = '$ ' + (this.FutureValue.present * Math.pow( ( 1 + rateOfReturn ), numberOfPeriods  ) ).toFixed(2)
-    // if (this.FutureValue.futureValue === '$ NaN') {
-    //   this.FutureValue.futureValue = '$ 0'
-    // }
+    if (this.FutureValue.futureValue === '$ NaN') {
+      this.FutureValue.futureValue = '$ 0'
+    }
     console.log(this.FutureValue.futureValue)
   }
 

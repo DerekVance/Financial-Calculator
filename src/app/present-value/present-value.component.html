@@ -1,0 +1,39 @@
+<h3>Present Value of Money</h3>
+<div class="columns">
+  <div class="column">
+    <div class="field">
+      <label class="label">Future Value</label>
+      <div class="control">
+        <input (keyup)="calulatePresentValue()" [(ngModel)]="PresentValue.future" class="input" type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Years</label>
+      <div class="control">
+        <input (keyup)="calulatePresentValue()" [(ngModel)]="PresentValue.years" class="input" type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Compound Type</label>
+      <div class="select">
+        <select (change)="calulatePresentValue()" [(ngModel)]="PresentValue.compound">
+          <option value="0">Please Select Compound Type</option>
+          <option value="1">Anually</option>
+          <option value="2">Semianually</option>
+          <option value="3">Quarterly</option>
+          <option value="12">Monthly</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h1>Cold Hard Cash</h1>
+    <h3>{{ PresentValue.presentValue }}</h3>
+  </div>
+  <div class="column">
+    <p>
+        The present value calculator is used to find the the present value of a future sum of money.
+        You can use this to determine the sum of money you need now to have "x" amount in the future.
+    </p>
+  </div>
+</div>

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CashFlowComponent } from './cash-flow/cash-flow.component';
 import { FutureValueComponent } from './future-value/future-value.component';
+import { PresentValueComponent } from './present-value/present-value.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CashFlowComponent,
-    FutureValueComponent
+    FutureValueComponent,
+    PresentValueComponent
   ],
   imports: [
     BrowserModule,
