@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { CashFlowComponent } from './cash-flow/cash-flow.component';
+import { FutureValueComponent } from './future-value/future-value.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CashFlowComponent
+    CashFlowComponent,
+    FutureValueComponent
   ],
   imports: [
     BrowserModule,

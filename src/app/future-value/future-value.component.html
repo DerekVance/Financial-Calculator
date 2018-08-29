@@ -1,0 +1,41 @@
+<h3>Future Value of Money</h3>
+<div class="columns">
+  <div class="column">
+    <div class="field">
+      <label class="label">Present Value</label>
+      <div class="control">
+        <input (keyup)="calulateFutureValue()" [(ngModel)]="FutureValue.present" class="input" type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Years</label>
+      <div class="control">
+        <input (keyup)="calulateFutureValue()" [(ngModel)]="FutureValue.years" class="input" type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Compound Type</label>
+      <div class="select">
+        <select (change)="calulateFutureValue()" [(ngModel)]="FutureValue.compound">
+          <option value="0">Please Select Compound Type</option>
+          <option value="1">Anually</option>
+          <option value="2">Semianually</option>
+          <option value="3">Quarterly</option>
+          <option value="12">Monthly</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h1>Cold Hard Cash</h1>
+    <h3>{{ FutureValue.futureValue }}</h3>
+  </div>
+  <div class="column">
+    <p>
+      Cash flow is a movement of money in and out of a businesses, projects, or
+      investments. It can be used to also calculate the internal rate of return or
+      the net present value. Cash flow gives insight to a businesses liquidity,
+      being profitable does not equally compare to a companies liquid assets.
+    </p>
+  </div>
+</div>
