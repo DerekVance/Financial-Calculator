@@ -1,0 +1,21 @@
+<h3>Time to Double Investment</h3>
+<div class="columns">
+  <div class="column">
+    <div class="field">
+      <label class="label">Interest Rate of Investment</label>
+      <div class="control">
+        <input (keyup)="calculateDouble()" [(ngModel)]="Double.rate" class="input" type="text">
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h1>Years to Double Investment</h1>
+    <h3>{{ Double.years }}</h3>
+  </div>
+  <div class="column">
+    <p>
+      This calculates the number of years it will take until a fixed annual interest
+      rate investment will double in value.
+    </p>
+  </div>
+</div>
