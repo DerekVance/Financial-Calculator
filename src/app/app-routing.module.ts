@@ -4,12 +4,15 @@ import { CashFlowComponent } from './cash-flow/cash-flow.component';
 import { FutureValueComponent } from './future-value/future-value.component';
 import { PresentValueComponent } from './present-value/present-value.component'
 import { DoubleComponent } from './double/double.component';
+import { GainLossComponent } from './gain-loss/gain-loss.component';
+
 
 const routes: Routes = [
   { path: 'cash-flow', component: CashFlowComponent },
   { path: 'future-value-of-money', component: FutureValueComponent },
   { path: 'present-value-of-money', component: PresentValueComponent },
-  { path: 'time-to-double-investment', component: DoubleComponent }
+  { path: 'time-to-double-investment', component: DoubleComponent },
+  { path: 'percent-gain-or-loss', component: GainLossComponent }
 ];
 
 @NgModule({
